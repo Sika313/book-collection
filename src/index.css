@@ -1,3 +1,63 @@
+body{
+  background-color: rgb(22, 22, 36);
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+li:hover{
+  background-color: rgb(69, 22, 222)
+}
+
 .App{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 30%;
+}
+
+.title{
+  font-family: Bradley Hand ITC;
+  font-weight: bolder;
+  color: red;
+  font-size: 50px;
+}
+
+.profile-pic{
+  width: 40%;
+  height: 200px;
+  border: 2px solid silver;
+  margin-bottom: 10px;
+}
+
+.list{
+  width: 40%;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+@media screen and (max-width: 370px){
+  .App{
+    width: 100%;
+    margin-left: 0%;
+  }
+  .title{
+    font-size: 25px;
+  }
+  .profile-pic{
+    width: 50%;
+    height: 100px;
+  }
+  .list{
+    width: 90%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 790px){
+  .App{
+    width: 70%;
+    margin-left: 20%;
+  }
 }
